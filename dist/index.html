@@ -5,76 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- my style -->
+  <link rel="stylesheet" href="css/main.css">
   
   <title>Frontend Mentor | Insure landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+ </head>
 <body>
 
-  How we work
-  Blog
-  Account
-  View plans
+  <header class="header">
+    <nav>
+      <a href="/" class="header__logo">
+        <img src="images/logo.svg" alt="insure">
+      </a>
+      <ul class="header__links">
+        <li>
+          <a href="#">How we work</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Account</a>
+        </li>
+              </ul>
+    </nav>
+    <a href="#" class="cta">
+      <button>View plans</button>
+    </a>
+  </header>
 
-  Humanizing your insurance.
+  <section class="hero">
+    <img src="images/image-intro-mobile.jpg" class="mobile-img" alt="people walking">
+    <img src="images/image-intro-desktop.jpg" class="desktop-img" alt="people walking">
+    <div class="hero__content">
+      <div class="hero__title">
+        Humanizing your insurance.
+      </div>
+    
+      <div class="hero__paragraph">
+        Get your life insurance coverage easier and faster. We blend our expertise 
+        and technology to help you find the plan that’s right for you. Ensure you 
+        and your loved ones are protected.
+      </div>
+    
+      <a href="#" class="cta">View plans</a>
+    </div>
+  </section>
 
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
+  <main class="main">
+    <h1 class="main__title">
+      We’re different
+    </h1>
+  
+    <div class="card">
+      Snappy Process
+    
+      Our application process can be completed in minutes, not hours. Don’t get 
+      stuck filling in tedious forms.
+    </div>
+  
+    <div class="card">
+      Affordable Prices
+    
+      We don’t want you worrying about high monthly costs. Our prices may be low, 
+      but we still offer the best coverage possible.
+    </div>
+  
+    <div class="card">
+      People First
+    
+      Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+      sure you’re covered when you need it.
+    </div>
+  
+    <div class="main__footer">
+      Find out more about how we work
+      How we work
+    </div>
+  </main>
 
-  View plans
-
-  We’re different
-
-  Snappy Process
-
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
-
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
+<footer class="footer">
+  
+    <div class="footer__content">
+      Our company
+    
+      How we work
+      Why Insure?
+      View plans
+      Reviews
+    
+      Help me
+    
+      FAQ
+      Terms of use
+      Privacy policy
+      Cookies
+    
+      Contact
+    
+      Sales
+      Support
+      Live chat
+    
+      Others
+    
+      Careers
+      Press
+      Licenses
+    </div>
+</footer>
 
   
   <div class="attribution">
