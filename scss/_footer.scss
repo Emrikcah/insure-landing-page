@@ -12,12 +12,16 @@
       padding-bottom: 14px;
    }
 
+   &__flex{
+      margin-bottom: 40px;
+   }
+
    &__social {
       padding-bottom: 32px;
    }
 
    &__social-links {
-      padding-bottom: 81px;
+      
 
       & > img:not(:last-child) {
          margin-right: 16px;
@@ -38,9 +42,12 @@
    }
 
    .border-bottom {
+      
       border-bottom: 1px solid $line2;
       width: 100%;
-      margin: 40px auto 0;
+      margin-bottom: 40px;
+      
+     
    }
 }
 
@@ -54,6 +61,10 @@
       &__flex {
          display: flex;
          justify-content: space-between;
+      }
+
+      &__social {
+         padding-bottom: 0;
       }
 
       &__links {

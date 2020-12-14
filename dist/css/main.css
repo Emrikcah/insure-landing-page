@@ -341,12 +341,12 @@ img {
   padding-bottom: 14px;
 }
 
-.footer__social {
-  padding-bottom: 32px;
+.footer__flex {
+  margin-bottom: 40px;
 }
 
-.footer__social-links {
-  padding-bottom: 81px;
+.footer__social {
+  padding-bottom: 32px;
 }
 
 .footer__social-links > img:not(:last-child) {
@@ -369,7 +369,7 @@ img {
 .footer .border-bottom {
   border-bottom: 1px solid #DADADA;
   width: 100%;
-  margin: 40px auto 0;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 1000px) {
@@ -380,6 +380,9 @@ img {
   .footer__flex {
     display: flex;
     justify-content: space-between;
+  }
+  .footer__social {
+    padding-bottom: 0;
   }
   .footer__links {
     display: flex;
