@@ -1,7 +1,8 @@
 const hamburger = document.querySelector('.hamburger-menu');
-const headerLinks = document.getElementById('header__links');
+const ul = document.getElementById('header__links');
+
 
 hamburger.addEventListener('click', ()=>{
-   headerLinks.classList.toggle('show');
-
+   ul.classList.toggle('show__header__links');
+   hamburger.classList.toggle('active');
 });

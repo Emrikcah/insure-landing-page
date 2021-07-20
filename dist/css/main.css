@@ -79,83 +79,103 @@ img {
 }
 
 .header {
-  padding-top: 31px;
-  padding-bottom: 31px;
+  background-color: red;
 }
 
-.header img {
-  display: block;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
 }
 
-.header__nav {
+.nav-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 80px;
+}
+
+.nav-center {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.close {
+  display: none;
+}
+
+.hamburger-menu.active .open {
+  display: none;
+}
+
+.hamburger-menu.active .close {
+  display: block;
 }
 
 .header__links {
-  position: absolute;
-  display: none;
-}
-
-.header .hamburger-menu {
-  display: inline;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-
-.header .hamburger-menu .close {
-  display: none;
-}
-
-.header .show {
-  display: block;
-  position: fixed;
-  top: 94px;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #2C2830;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 40px;
-  text-align: center;
-  background: #2C2830;
-}
-
-.header .show li {
   font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.header__links li:not(:last-child) {
   padding-bottom: 24px;
+  line-height: 40px;
 }
 
-.header .show a {
-  color: #fff;
+.header__links .nav-link {
+  color: white;
+  display: block;
 }
 
-.header .show .btn-secondary {
+.header__links .btn-secondary {
+  color: white;
+  border: 1px solid white;
   width: 100%;
-  border: 1px solid #fff;
 }
 
-.header .show .btn-secondary:hover {
-  background: #fff;
-  color: #2C2830;
+.show__header__links {
+  height: 100vh;
 }
 
-@media (min-width: 1000px) {
-  .header__links {
-    position: static;
-    display: block;
+@media (min-width: 970px) {
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
   }
-  .header__links li {
-    display: inline-block;
-    margin-right: 28px;
-  }
-  .header .hamburger-menu {
+  .nav-center .hamburger-menu {
     display: none;
   }
-  .header button {
-    display: block;
+  .nav-center .header__links {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: inherit;
+    width: 50%;
+  }
+  .nav-center .header__links li {
+    padding-bottom: 0;
+  }
+  .nav-center .nav-link {
+    color: #837d87;
+  }
+  .nav-center .btn-secondary {
+    border: 2px solid #2C2830;
+    color: #2C2830;
   }
 }
 
