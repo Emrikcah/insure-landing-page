@@ -34,7 +34,6 @@ a {
 
 img {
    max-width: 100%;
-
 }
 
 .container {
@@ -43,14 +42,9 @@ img {
    max-width: 500px;
    margin: 0 auto;
 
-   @media(min-width: 768px){
+   @media (min-width: 768px) {
       max-width: 1440px;
       padding-left: 165px;
       padding-right: 165px;
    }
-
-   
 }
-
-
-

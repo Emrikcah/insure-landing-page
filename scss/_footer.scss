@@ -12,7 +12,17 @@
       padding-bottom: 14px;
    }
 
-   &__flex{
+   a {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $dark-violet;
+      letter-spacing: 1.5px;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+
+   &__flex {
       margin-bottom: 40px;
    }
 
@@ -21,10 +31,12 @@
    }
 
    &__social-links {
-      
-
       & > img:not(:last-child) {
          margin-right: 16px;
+      }
+
+      &:hover{
+         fill: red;
       }
    }
 
@@ -42,12 +54,9 @@
    }
 
    .border-bottom {
-      
       border-bottom: 1px solid $line2;
       width: 100%;
       margin-bottom: 40px;
-      
-     
    }
 }
 

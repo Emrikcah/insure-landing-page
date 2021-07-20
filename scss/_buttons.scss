@@ -17,11 +17,20 @@
 
 .btn-secondary{
    @extend %btn;
-   border: 1px solid $very-dark-violet;
-   color: $very-dark-violet;
+   border: 1px solid white;
+   color: white;
+   width: 100%;
 
-   &:hover{
-      color: #fff;
-      background: $very-dark-violet;
+}
+
+@media (min-width: 970px) {
+   .btn-secondary {
+      border: 2px solid $mobile-nav-bg-clr;
+      color: $mobile-nav-bg-clr;
+
+      &:hover{
+         color: #fff;
+         background: $very-dark-violet;
+      }
    }
 }

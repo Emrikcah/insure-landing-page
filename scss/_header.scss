@@ -1,6 +1,5 @@
 .header {
-   // height: 800px ;
-   background-color: red;
+//  margin-bottom: 105px;
 }
 
 .navbar {
@@ -59,14 +58,9 @@
    .nav-link {
       color: white;
       display: block;
-      // padding: 1rem 2rem;
+      
    }
-
-   .btn-secondary {
-      color: white;
-      border: 1px solid white;
-      width: 100%;
-   }
+  
 }
 
 .show__header__links {
@@ -88,20 +82,21 @@
          align-items: center;
          justify-content: space-between;
          background-color: inherit;
-         width: 50%;
+         width: 555px;
 
          li {
             padding-bottom: 0;
          }
       }
 
+      
+      
       .nav-link {
          color: $dark-grayish-violet;
-      }
 
-      .btn-secondary {
-         border: 2px solid $mobile-nav-bg-clr;
-         color: $mobile-nav-bg-clr;
+         &:hover{
+            color: $mobile-nav-bg-clr;
+         }
       }
    }
 }
