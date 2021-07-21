@@ -31,13 +31,18 @@
    }
 
    &__social-links {
-      & > img:not(:last-child) {
+      & > svg:not(:last-child) {
          margin-right: 16px;
       }
+   }
 
-      &:hover{
-         fill: red;
-      }
+   svg{
+      fill: #837D88;
+   }
+
+   svg:hover{
+      fill: $dark-violet;
+      cursor: pointer;
    }
 
    &__links-title {

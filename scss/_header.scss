@@ -1,13 +1,10 @@
-.header {
-//  margin-bottom: 105px;
-}
-
 .navbar {
    position: fixed;
    top: 0;
    left: 0;
    width: 100%;
    background: white;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .nav-header {
@@ -44,7 +41,7 @@
    height: 0; //hide the ul by default
    overflow: hidden;
    transition: all 0.3s linear;
-
+   
    padding-left: 24px;
    padding-right: 24px;
    font-size: 2rem;
@@ -58,9 +55,7 @@
    .nav-link {
       color: white;
       display: block;
-      
    }
-  
 }
 
 .show__header__links {
@@ -71,6 +66,9 @@
    .nav-center {
       display: flex;
       justify-content: space-between;
+      max-width: 1440px;
+      padding-left: 165px;
+      padding-right: 165px;
       .hamburger-menu {
          display: none;
       }
@@ -89,12 +87,10 @@
          }
       }
 
-      
-      
       .nav-link {
          color: $dark-grayish-violet;
 
-         &:hover{
+         &:hover {
             color: $mobile-nav-bg-clr;
          }
       }
