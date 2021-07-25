@@ -37,6 +37,10 @@ img {
   max-width: 100%;
 }
 
+.svg-move {
+  position: absolute;
+}
+
 .container {
   padding-left: 24px;
   padding-right: 24px;
@@ -83,6 +87,11 @@ img {
     color: #fff;
     background: #2b272f;
   }
+}
+
+.header .svg-move {
+  top: -57px;
+  left: 1500px;
 }
 
 .navbar {
@@ -331,7 +340,7 @@ img {
   }
   .main__content {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 0 30px;
   }
   .main .card {
