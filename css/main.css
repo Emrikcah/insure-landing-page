@@ -203,10 +203,6 @@ img {
   flex-direction: column;
 }
 
-.hero .red {
-  margin: 0 auto;
-}
-
 .hero .desktop-img {
   display: none;
 }
