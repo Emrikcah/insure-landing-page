@@ -7,6 +7,12 @@
 
    .flex {
       padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .red{
+      margin: 0 auto;
    }
 
    .desktop-img {
@@ -39,12 +45,19 @@
    .hero {
       min-height: 600px;
       margin-bottom: 305px;
+      
 
       .flex {
          display: flex;
+         flex-direction: row;
          align-items: center;
+         order: 2;
          // max-width: 1080px;
          padding-top: 105px;
+      }
+
+      .red{
+         order: 2;
       }
       .mobile-img {
          display: none;
@@ -54,7 +67,7 @@
          display: block;
          width: 100%;
          max-width: 540px;
-         order: 2;
+         // order: 2;
          // height: auto;
          margin-bottom: -350px;
       }
